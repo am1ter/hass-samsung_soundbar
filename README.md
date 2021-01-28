@@ -27,7 +27,7 @@ media_player:
     name: "Soundbar"
     host: 192.168.1.227
     port: 55001
-    max_volume: 20
+    max_volume: 30
     power_options: True
 ```
 
