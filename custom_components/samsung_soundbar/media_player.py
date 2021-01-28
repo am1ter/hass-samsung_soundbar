@@ -12,7 +12,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 _LOGGER = logging.getLogger(__name__)
 
-VERSION = '0.0.3'
+VERSION = '0.0.1'
 
 DOMAIN = "samsung_soundbar"
 
@@ -32,6 +32,7 @@ from homeassistant.components.media_player.const import (
   SUPPORT_TURN_OFF,
   SUPPORT_VOLUME_MUTE,
   SUPPORT_SELECT_SOURCE,
+  SUPPORT_VOLUME_STEP,
   SUPPORT_VOLUME_SET,
 )
 
@@ -45,20 +46,20 @@ from homeassistant.const import (
 
 MULTI_ROOM_SOURCE_TYPE = [
   'hdmi1',
-  'hdmi2',
+  'aux',
   'optical',
   'bt',
   'wifi'
 ]
 
 DEFAULT_NAME = 'Samsung Soundbar'
-DEFAULT_PORT = '56001'
+DEFAULT_PORT = '55001'
 DEFAULT_POWER_OPTIONS = True
-DEFAULT_MAX_VOLUME = '40'
+DEFAULT_MAX_VOLUME = '30'
 BOOL_OFF = 'off'
 BOOL_ON = 'on'
 TIMEOUT = 2
-SUPPORT_SAMSUNG_MULTI_ROOM = SUPPORT_VOLUME_SET | SUPPORT_VOLUME_MUTE | SUPPORT_SELECT_SOURCE
+SUPPORT_SAMSUNG_MULTI_ROOM = SUPPORT_VOLUME_SET | SUPPORT_VOLUME_STEP | SUPPORT_VOLUME_MUTE | SUPPORT_SELECT_SOURCE
 
 CONF_MAX_VOLUME = 'max_volume'
 CONF_PORT = 'port'
