@@ -1,12 +1,13 @@
-Samsung Soundbar
+Samsung Soundbar HW-MS650: Fork from 
 ============
-Control volume, and source of your multiroom device like Samsung Soundbar K650, HW-MS650 or Q90R. This is a fork of macbury's [ha_samsung_multi_room](https://github.com/macbury/ha_samsung_multi_room) working on the latest version of Home Assistant.
+Control volume, and source of your multiroom device like Samsung Soundbar K650, HW-MS650 or Q90R. 
+This is a fork of idmedia's [ha_samsung_multi_room] (https://github.com/IDmedia/hass-samsung_soundbar), original version is custom_component by macbury's [ha_samsung_multi_room](https://github.com/macbury/ha_samsung_multi_room) working on the latest version of Home Assistant.
 
 ## Installation using HACS (Recommended)
 1. Navigate to HACS and add a custom repository  
-    **URL:** https://github.com/IDmedia/hass-samsung_soundbar  
+    **URL:** https://github.com/am1ter/hass-samsung_soundbar
     **Category:** Integration
-2. Install module as usual
+2. Install module as ussual
 3. Restart Home Assistant
 
 ## Configuration
@@ -14,8 +15,8 @@ Control volume, and source of your multiroom device like Samsung Soundbar K650, 
 | --- | --- | --- | ---
 | name | | yes | Name of the media player.
 | host | 127.0.0.1 | no | The ip of your soundbar.
-| port | 56001 | no | The port which the soundbar uses. My Q90R uses 56001, but the port might differ, try 55001.
-| max_volume | 40 | no | Limit the max volume.
+| port | 55001 | no | The port which the soundbar uses. My MS650 uses 55001, but the port might differ, try 56001.
+| max_volume | 30 | no | Limit the max volume.
 | power_options | true | no | Enable or disable the power options
 
 ## Example
@@ -25,18 +26,18 @@ media_player:
   - platform: samsung_soundbar
     name: "Soundbar"
     host: 192.168.1.227
-    port: 56001
+    port: 55001
     max_volume: 20
     power_options: True
 ```
 
 # Sources
 
-* soundshare - this is tv
 * bt - bluetooth
 * aux
 * optical
 * hdmi
+* wifi
 
 # Api support
 Based on information gathered from: https://github.com/bacl/WAM_API_DOC/blob/master/API_Methods.md
