@@ -5,8 +5,8 @@ This is a fork of idmedia's [ha_samsung_multi_room] (https://github.com/IDmedia/
 
 ## Installation using HACS (Recommended)
 1. Navigate to HACS and add a custom repository  
-    **URL:** https://github.com/am1ter/hass-samsung_soundbar
-    **Category:** Integration
+    * **URL:** https://github.com/am1ter/hass-samsung_soundbar
+    * **Category:** Integration
 2. Install module as ussual
 3. Restart Home Assistant
 
