@@ -1,7 +1,7 @@
 Samsung Soundbar HW-MS650 Home Assistant custom component
 ============
 Control volume, and source of your multiroom device like Samsung Soundbar K650, HW-MS650 or Q90R. 
-This is a fork of idmedia's [ha_samsung_multi_room] (https://github.com/IDmedia/hass-samsung_soundbar), original version is custom_component by macbury's [ha_samsung_multi_room](https://github.com/macbury/ha_samsung_multi_room) working on the latest version of Home Assistant.
+This is a fork of idmedia's [hass-samsung_soundbar], original version is custom_component by macbury's [ha_samsung_multi_room](https://github.com/macbury/ha_samsung_multi_room) working on the latest version of Home Assistant.
 
 ## Installation using HACS (Recommended)
 1. Navigate to HACS and add a custom repository  
